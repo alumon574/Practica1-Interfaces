@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val jugador = findViewById(R.id.button2) as Button
+        val jugador = findViewById(R.id.button1) as Button
 
         jugador.setOnClickListener { (lanzarNewPlayer() ) }
     }

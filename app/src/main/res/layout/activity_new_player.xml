@@ -18,7 +18,7 @@
             <ImageView
                 android:layout_width="59dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/person_Icon" />
+                app:srcCompat="@drawable/person_icon" />
 
             <EditText
                 android:id="@+id/nameField"
@@ -67,7 +67,7 @@
             <ImageView
                 android:layout_width="51dp"
                 android:layout_height="49dp"
-                app:srcCompat="@drawable/Camera_Icon" />
+                app:srcCompat="@drawable/camera_icon" />
 
             <ImageView
                 android:layout_width="119dp"
