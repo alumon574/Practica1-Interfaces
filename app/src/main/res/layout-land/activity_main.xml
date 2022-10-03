@@ -16,6 +16,7 @@
         android:id="@+id/TextoCentral"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/courgette_regular"
         android:text="Play juegos"
         style="@style/textoCentral"
         />

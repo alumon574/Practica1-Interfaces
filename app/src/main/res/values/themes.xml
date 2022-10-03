@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Practica1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/lightBlue</item>
+        <item name="colorPrimary">@color/red</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -16,6 +16,10 @@
 
     <style name="textoCentral">
         <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="botonChange">
+        <item name="android:background">@color/clearRed</item>
     </style>
 
 </resources>
