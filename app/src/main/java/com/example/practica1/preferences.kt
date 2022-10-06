@@ -10,6 +10,5 @@ class preferences : AppCompatActivity() {
         setContentView(R.layout.activity_preferences)
 
         val rb = findViewById(R.id.barra) as SeekBar
-
     }
 }
