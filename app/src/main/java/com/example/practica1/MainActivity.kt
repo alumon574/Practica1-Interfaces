@@ -10,13 +10,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val jugador = findViewById(R.id.button1) as Button
-
-        jugador.setOnClickListener { (lanzarNewPlayer() ) }
+        var jugador = findViewById(R.id.button1) as Button
+        jugador.setOnClickListener { (lanzarNewPlayer()) }
+        jugador = findViewById(R.id.button2) as Button
+        jugador.setOnClickListener { lanzarPreferences() }
     }
 
     fun lanzarNewPlayer() {
-        val i = Intent (this, NewPlayer::class.java)
+        val i = Intent(this, NewPlayer::class.java)
+        startActivity(i)
+    }
+
+    fun lanzarPreferences() {
+        val i = Intent(this, preferences::class.java)
         startActivity(i)
     }
 }

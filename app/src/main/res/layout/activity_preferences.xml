@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".preferences">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLh7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GLV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="641dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/TextoCentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige una opcion:"
+        style="@style/textoCentral"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GLh1"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/GLV1"
+        app:layout_constraintTop_toBottomOf="@id/GLh2"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Los chichos"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Los Morancos"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Andy y Lucas"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="El cigala"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:text="Tongo"/>
+
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="7"
+        app:layout_constraintTop_toBottomOf="@id/GLh6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/GLh7"
+        android:layout_marginStart="35dp"
+        />
+
+    <SeekBar
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7"
+        app:layout_constraintTop_toBottomOf="@id/stars"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
