@@ -13,10 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var jugador = findViewById(R.id.button1) as Button
-        jugador.setOnClickListener { (lanzarNewPlayer()) }
-        jugador = findViewById(R.id.button2) as Button
-        jugador.setOnClickListener { lanzarPreferences() }
+        val juegos = findViewById<Button>(R.id.button0)
+        juegos.setOnClickListener { lanzarJuegos() }
+        val jugador = findViewById<Button>(R.id.button1)
+        jugador.setOnClickListener { lanzarNewPlayer() }
+        val preferences = findViewById<Button>(R.id.button2)
+        preferences.setOnClickListener { lanzarPreferences() }
+
     }
 
     fun lanzarNewPlayer() {
@@ -29,15 +32,20 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun lanzarJuegos() {
+        val i = Intent(this, games::class.java)
+        startActivity(i)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main,menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val id =item.itemId
-        if (id == R.id.action_buscar){
-            Toast.makeText(this,"Búsqueda",Toast.LENGTH_LONG).show()
+        val id = item.itemId
+        if (id == R.id.action_buscar) {
+            Toast.makeText(this, "Búsqueda", Toast.LENGTH_LONG).show()
             return true
         }
         return super.onOptionsItemSelected(item)

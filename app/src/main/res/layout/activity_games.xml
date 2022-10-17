@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".games">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="620dp"
+        app:fabSize="normal"
+        android:src="@drawable/chechkicon"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="#FF6565">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/games_angrybirds"/>
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Angry Birds"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#FF6565">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/games_dragonfly"/>
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginLeft="10dp"
+                android:text="Dragon Fly"
+                android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#FF6565">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/games_hillclimbingracing"/>
+                <CheckBox
+                    android:id="@+id/check3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Hill climbing racing"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#FF6565">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/games_radiantdefense"/>
+                <CheckBox
+                    android:id="@+id/check4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Radiant defense"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#FF6565">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/games_pocketsoccer"/>
+                <CheckBox
+                    android:id="@+id/check5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Pocket soccer"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#FF6565">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/games_ninjump"/>
+                <CheckBox
+                    android:id="@+id/check6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="ninja jump"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="#FF6565">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/games_aircontrol"/>
+                <CheckBox
+                    android:id="@+id/check7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Air control"
+                    android:textSize="20dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

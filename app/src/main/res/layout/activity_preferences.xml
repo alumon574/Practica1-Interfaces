@@ -105,19 +105,19 @@
         >
         <RadioButton
             android:layout_width="match_parent"
-            android:text="Los chichos"/>
+            android:text="Angry birds"/>
         <RadioButton
             android:layout_width="match_parent"
-            android:text="Los Morancos"/>
+            android:text="Dragon fly"/>
         <RadioButton
             android:layout_width="match_parent"
-            android:text="Andy y Lucas"/>
+            android:text="Hill climbing racing"/>
         <RadioButton
             android:layout_width="match_parent"
-            android:text="El cigala"/>
+            android:text="Pocket soccer"/>
         <RadioButton
             android:layout_width="match_parent"
-            android:text="Tongo"/>
+            android:text="Radiant defense"/>
 
     </RadioGroup>
 

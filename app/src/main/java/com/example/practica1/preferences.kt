@@ -2,9 +2,7 @@ package com.example.practica1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.RadioGroup
-import android.widget.RatingBar
-import android.widget.SeekBar
+import android.widget.*
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class preferences : AppCompatActivity() {
@@ -33,6 +31,20 @@ class preferences : AppCompatActivity() {
 
                 }
             })
+
+        fb.setOnClickListener(){
+            val selec = rg.checkedRadioButtonId
+            val nameSelect = findViewById<RadioButton>(selec)
+            val puntuacion = rb.rating.toInt()
+            if (selec.equals(-1)) {
+                Toast.makeText(applicationContext, "Debes elegir un juego.", Toast.LENGTH_LONG)
+                    .show()
+            }else if (selec!=-1 && puntuacion.equals(0)){
+                Toast.makeText(applicationContext, "Puntua la app antes", Toast.LENGTH_LONG).show()
+            }else {
+                Toast.makeText(applicationContext, "" + nameSelect.text + " Puntuacion: " + puntuacion,Toast.LENGTH_LONG).show()
+            }
+        }
         }
 
 
