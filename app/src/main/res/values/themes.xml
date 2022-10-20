@@ -18,6 +18,10 @@
         <item name="android:textSize">30sp</item>
     </style>
 
+    <style name="botonesGeneros">
+        <item name="android:background">@color/white</item>
+    </style>
+
     <style name="Theme.Practica1.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

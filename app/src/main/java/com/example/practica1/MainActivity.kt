@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun lanzarBusqueda(){
+        val i = Intent(this, About::class.java)
+        startActivity(i)
+    }
+
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
@@ -46,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         val id = item.itemId
         if (id == R.id.action_buscar) {
             Toast.makeText(this, "Búsqueda", Toast.LENGTH_LONG).show()
+            lanzarBusqueda()
             return true
         }
         return super.onOptionsItemSelected(item)

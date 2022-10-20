@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".About">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Plataformas:"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/FiltroPC"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/FiltroPS4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/FiltroXBOX"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/Filtro360"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX360" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/FiltroWii"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wii" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/FiltroWiiU"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WiiU" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/Filtro3DS"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3DS" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Generos:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoAccion"
+                        android:layout_width="380dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Accion" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoAventura"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Aventura" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoDeportes"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Deportes" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoDisparos"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Disparos" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoEstrategia"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Estrategia" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoLucha"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Lucha" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoMusical"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Musical" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoRol"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Rol" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generoSimulacion"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="1dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:text="Simulacion" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </TableLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_main"
+        app:backgroundTint="@color/lightBlue"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bottomFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:backgroundTint="@color/purple_200"
+        android:src="@drawable/plus_icon"
+        app:layout_anchor="@id/bottomAppBar"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
