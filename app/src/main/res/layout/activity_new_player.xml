@@ -128,7 +128,8 @@
                 <EditText
                     android:id="@+id/PhoneField"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
                     android:layout_marginStart="10dp"
 
                     android:layout_span="2"
@@ -142,7 +143,10 @@
             android:layout_height="wrap_content">
 
             <Spinner
+                android:id="@+id/spinner"
                 android:layout_column="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 >
 
             </Spinner>
