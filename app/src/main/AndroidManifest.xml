@@ -17,7 +17,7 @@
             android:name=".JuegosRecyclerView"
             android:exported="false" />
         <activity
-            android:name=".About"
+            android:name=".Generos"
             android:exported="false" />
         <activity
             android:name=".games"

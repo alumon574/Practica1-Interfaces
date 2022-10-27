@@ -2,19 +2,32 @@ package com.example.practica1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.TranslateAnimation
-import android.widget.Toast
-import com.google.android.material.button.MaterialButton
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 
-class About : AppCompatActivity() {
+class Generos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about)
+        setContentView(R.layout.activity_generos)
+
+        val items = ArrayList<item_generos>()
+        items.add(item_generos(R.string.Accion))
+        items.add(item_generos(R.string.Aventura))
+        items.add(item_generos(R.string.Deportes))
+        items.add(item_generos(R.string.Disparos))
+        items.add(item_generos(R.string.Estrategia))
+        items.add(item_generos(R.string.Lucha))
+        items.add(item_generos(R.string.Musical))
+        items.add(item_generos(R.string.Simulacion))
+        items.add(item_generos(R.string.Rol))
 
 
-        val btAccion = findViewById<MaterialButton>(R.id.generoAccion)
+        /*val btAccion = findViewById<MaterialButton>(R.id.generoAccion)
         val btAventura = findViewById<MaterialButton>(R.id.generoAventura)
         val btDeportes = findViewById<MaterialButton>(R.id.generoDeportes)
         val btDisparos = findViewById<MaterialButton>(R.id.generoDisparos)
@@ -23,10 +36,8 @@ class About : AppCompatActivity() {
         val btMusical = findViewById<MaterialButton>(R.id.generoMusical)
         val btRol = findViewById<MaterialButton>(R.id.generoRol)
         val btSimulacion = findViewById<MaterialButton>(R.id.generoSimulacion)
-        val Fab = findViewById<FloatingActionButton>(R.id.bottomFAB)
-        val snackbar2 = Snackbar.make( Fab,
-            "El boton se mueve hacia arriba",
-            Snackbar.LENGTH_LONG)
+
+
         btAccion.setOnClickListener(){
             Toast.makeText(applicationContext, btAccion.text, Toast.LENGTH_LONG).show()
         }
@@ -61,15 +72,50 @@ class About : AppCompatActivity() {
 
         btSimulacion.setOnClickListener(){
             Toast.makeText(applicationContext, btSimulacion.text, Toast.LENGTH_LONG).show()
-        }
-        /*Fab.setOnClickListener(){
-            val anim: TranslateAnimation =TranslateAnimation(0f,0f,0f,-200f)
-            anim.duration=300
-            Fab.startAnimation(anim)
         }*/
+        val Fab = findViewById<FloatingActionButton>(R.id.bottomFAB)
+        val snackbar2 = Snackbar.make( Fab,
+            "El boton se mueve hacia arriba",
+            Snackbar.LENGTH_LONG)
         Fab.setOnClickListener(){
             snackbar2.show()
         }
 
+    }
+}
+
+
+class genreListAdapter(var items: ArrayList<item_generos>):RecyclerView.Adapter<genreListAdapter.gameListViewHolder>(){
+    lateinit var onClick:(View) -> Unit
+
+    init {
+        this.items=items
+    }
+
+    class gameListViewHolder(itemView: TextView): RecyclerView.ViewHolder(itemView){
+        private var texto: TextView
+
+        init {
+            texto=itemView.findViewById(R.id.boton)
+        }
+
+        fun bindLista(l: item_generos, onClick: (View)-> Unit) = with(itemView){
+            texto.setText(l.texto)
+            setOnClickListener{onClick(itemView)}
+        }
+    }
+
+    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): gameListViewHolder {
+        val itemView = LayoutInflater.from(viewGroup.context).inflate(R.layout.activity_item_generos, viewGroup,false)
+        return gameListViewHolder(itemView as TextView)
+    }
+
+    override fun onBindViewHolder(viewHolder: gameListViewHolder, position: Int) {
+        val item = items.get(position)
+        viewHolder.bindLista(item,onClick)
+    }
+
+    override fun getItemCount(): Int {
+        return items.size
     }
 }

@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun lanzarBusqueda(){
-        val i = Intent(this, About::class.java)
+        val i = Intent(this, Generos::class.java)
         startActivity(i)
     }
 
