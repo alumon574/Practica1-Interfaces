@@ -4,9 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/boton"
@@ -14,10 +11,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left|center_vertical"
                 android:textColor="@color/black"
-                app:backgroundTint="@color/white" />
-
-        </TableRow>
-
+                app:backgroundTint="@color/red" />
 
 
 </TableLayout>
