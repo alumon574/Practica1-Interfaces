@@ -17,22 +17,21 @@ class Generos : AppCompatActivity() {
         setContentView(R.layout.activity_generos)
 
         val items = ArrayList<item_generos>()
-        items.add(item_generos(R.string.Accion))
-        items.add(item_generos(R.string.Aventura))
-        items.add(item_generos(R.string.Deportes))
-        items.add(item_generos(R.string.Disparos))
-        items.add(item_generos(R.string.Estrategia))
-        items.add(item_generos(R.string.Lucha))
-        items.add(item_generos(R.string.Musical))
-        items.add(item_generos(R.string.Simulacion))
-        items.add(item_generos(R.string.Rol))
+        items.add(item_generos("Accion"))
+        items.add(item_generos("Aventura"))
+        items.add(item_generos("Deportes"))
+        items.add(item_generos("Disparos"))
+        items.add(item_generos("Estrategia"))
+        items.add(item_generos("Lucha"))
+        items.add(item_generos("Musical"))
+        items.add(item_generos("Simulacion"))
+        items.add(item_generos("Rol"))
 
         val recView = findViewById<RecyclerView>(R.id.recyclerView)
 
-
         recView.setHasFixedSize(true)
 
-        val adaptador = genreListAdapter(items)
+        val adaptador = genreListAdapter(items,this)
         recView.adapter = adaptador
         recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
