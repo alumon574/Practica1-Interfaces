@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         jugador.setOnClickListener { lanzarNewPlayer() }
         val preferences = findViewById<Button>(R.id.button2)
         preferences.setOnClickListener { lanzarPreferences() }
+        val about = findViewById<Button>(R.id.button3)
+        about.setOnClickListener{lanzarAbout()}
 
     }
 
@@ -39,6 +41,11 @@ class MainActivity : AppCompatActivity() {
 
     fun lanzarBusqueda(){
         val i = Intent(this, Generos::class.java)
+        startActivity(i)
+    }
+
+    fun lanzarAbout(){
+        val i = Intent(this,About::class.java)
         startActivity(i)
     }
 

@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/about_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/about_item.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_about.xml" value="0.18258426966292135" />
         <entry key="app/src/main/res/layout/activity_games.xml" value="0.14767932489451477" />
         <entry key="app/src/main/res/layout/activity_generos.xml" value="0.18983957219251338" />
@@ -12,7 +12,7 @@
         <entry key="app/src/main/res/layout/activity_juegos_recycler_view.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.3463541666666667" />
-        <entry key="app/src/main/res/layout/activity_new_player.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_new_player.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_new_player2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_new_player_landscape.xml" value="0.3463541666666667" />
         <entry key="app/src/main/res/layout/activity_preferences.xml" value="0.1" />
